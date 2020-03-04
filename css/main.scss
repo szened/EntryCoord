@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    --text-primary: #cccccc;
+    --text-secondary: #0000ff;
+    --text-terciary: #444444;
+    --bg-primary: #0F1419;
+    --bg-secondary: #171f26;
+}
+/*
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ff0000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+border-top: 4px solid #171f26;
+border-right: 4px solid #171f26; 
+border-bottom: 4px solid #171f26;
+border-left: 4px solid #171f26;  
+
+*/
+::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: #0400ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+.whole-container {
+    display: grid;
+    grid-template-columns: 200px 5fr 400px;
+    grid-template-rows: 44px 28px 72px 4fr 40px;
+    
+    
+
+    header {
+        background-color: #0F1419;
+        grid-area: 1/1 / 2/4;
+        display: grid;
+        grid-template-columns: 200px 5fr 200px;
+        grid-template-rows: 40px;
+        margin: 0;
+        padding: 0;
+        border-bottom: 4px solid #171f26;   
+    }
+    
+    section.logo {
+        background-color: #0F1419;
+        border-right: 4px solid #171f26; 
+        border-bottom: 4px solid #171f26;
+        grid-area: 2/1 / 4/2;
+    }
+    
+    section.left-bar {
+        background-color: #0F1419;
+        border-right: 4px solid #171f26; 
+        grid-area: 4/1 / 5/2;       
+    }
+    
+    section.breadchrumb {        
+        background-color: #0F1419;
+        border-bottom: 4px solid #171f26;
+        grid-area: 2/2 / 3/4;
+    }
+    
+    main {
+        background-color: #0F1419;
+        grid-area: 3/2 / 5/3;   
+        padding: 2rem;
+    }
+    
+    section.right-bar {
+        background-color: #0F1419;
+        border-left: 4px solid #171f26;    
+        grid-area: 3/3 / 5/4;
+    }
+    
+    footer {
+        background-color: #0F1419;
+        border-top: 4px solid #171f26;
+        grid-area: 5/1 / 6/4;
+    }
+}   
+
+.nav-icons{
+    list-style: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 8px;
+}
+
+.nav-link svg {
+    color: #333333;
+}
+
+.nav-link svg:hover {
+    color: #ccc;
+}
+
+.nav-link svg:active {
+    color: #ffffff;
+}
+
+.nav-icons li {
+    display: inline;
+}
+
+.header-left { 
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-center {
+    background-color: #0F1419;
+    padding-top: .5rem;
+    align-content: center;
+    
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+H1 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+H2 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.h2-c {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+/* Buttons*/
+
+.Left-sidebar-button {
+    width: 98%;
+    height: 3rem;
+    margin: 2px 4px 2px 2px ;
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    padding-left: 2rem;
+    
+    
+}
+.Left-sidebar-button a {
+    color:var(--text-primary);
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+/*Breadcrumb*/
+ul.breadcrumb {
+    padding-left: 2rem;
+    list-style: none;
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--text-secondary);
+    content: " > ";
+  }
+
+  ul.breadcrumb li a {
+    color: var(--text-terciary);
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  ul.breadcrumb li a:hover {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+
+  .breadcrumb-actual {
+      color: var(--text-primary);
+  }
+
+  .breadcrumb{
+    font-size:1em;
+  }
+
+  .login-form {
+      /*
+    background-color: #444444;
+    border: 2px solid green;
+    width: 300px;
+    */
+    padding: 50px;
+    border-radius: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bordered form 
+form {
+    background-color: #f44336;
+    border: 3px solid ;
+} */
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--bg-secondary);
+    border: 0px solid #ff0000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: var(--text-secondary);
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 6px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
