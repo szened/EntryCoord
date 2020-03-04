@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="TitleId">EntryCoord</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="whole-container">
+        <header>
+            <div class="header-left">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="/blog.html" class="nav-link"> 
+                                <svg book-open style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M13,12H20V13.5H13M13,9.5H20V11H13M13,14.5H20V16H13M21,4H3A2,2 0 0,0 1,6V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V6A2,2 0 0,0 21,4M21,19H12V6H21" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/projects.html" class="nav-link">
+                                <svg clipboard-multiple style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M4 7H2V21C2 22.1 2.9 23 4 23H18V21H4M20 3H16.8C16.4 1.8 15.3 1 14 1C12.7 1 11.6 1.8 11.2 3H8C6.9 3 6 3.9 6 5V17C6 18.1 6.9 19 8 19H20C21.1 19 22 18.1 22 17V5C22 3.9 21.1 3 20 3M14 3C14.6 3 15 3.5 15 4C15 4.5 14.5 5 14 5C13.5 5 13 4.5 13 4C13 3.5 13.4 3 14 3Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="/tasks.html" class="nav-link">
+                                <svg clipboard-file style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M19 3C20.1 3 21 3.9 21 5V9.17L19.83 8H15C12.79 8 11 9.79 11 12V21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H9.18C9.6 1.84 10.7 1 12 1C13.3 1 14.4 1.84 14.82 3H19M12 3C11.45 3 11 3.45 11 4C11 4.55 11.45 5 12 5C12.55 5 13 4.55 13 4C13 3.45 12.55 3 12 3M15 23C13.9 23 13 22.11 13 21V12C13 10.9 13.9 10 15 10H19L23 14V21C23 22.11 22.11 23 21 23H15M21 14.83L18.17 12H18V15H21V14.83Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="/admin.html" class="nav-link">
+                                <svg account-supervisor-circle style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M15.6,8.34C16.67,8.34 17.53,9.2 17.53,10.27C17.53,11.34 16.67,12.2 15.6,12.2A1.93,1.93 0 0,1 13.67,10.27C13.66,9.2 14.53,8.34 15.6,8.34M9.6,6.76C10.9,6.76 11.96,7.82 11.96,9.12C11.96,10.42 10.9,11.5 9.6,11.5C8.3,11.5 7.24,10.42 7.24,9.12C7.24,7.81 8.29,6.76 9.6,6.76M9.6,15.89V19.64C7.2,18.89 5.3,17.04 4.46,14.68C5.5,13.56 8.13,13 9.6,13C10.13,13 10.8,13.07 11.5,13.21C9.86,14.08 9.6,15.23 9.6,15.89M12,20C11.72,20 11.46,20 11.2,19.96V15.89C11.2,14.47 14.14,13.76 15.6,13.76C16.67,13.76 18.5,14.15 19.44,14.91C18.27,17.88 15.38,20 12,20Z" />
+                                </svg>
+                            </a>
+                        </li>
+                            
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-center">
+                <h1 id="demo"></h1>
+               
+            </div>
+            <script>
+                var myElement = document.getElementById("TitleId");
+                document.getElementById("demo").innerHTML =  myElement.innerHTML;
+            </script>
+
+            <div class="header-right">
+                <nav class="navbar">
+                    <ul class="navbar-nav">
+                        
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="/help.html" class="nav-link"> 
+                                <svg help-circle style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/messages.html" class="nav-link">
+                                <svg forum style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <svg web style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="/profile.html" class="nav-link">
+                                <svg account-circle style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                                </svg>
+                            </a>
+                        </li>
+                            
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="logo">
+            <img src="/images/Logo.svg" alt="EntryCoord logo">
+        </section>
+
+        <section class="left-bar">
+        
+            <button class="Left-sidebar-button">
+                <a href="#">Blog</a>
+            </button>
+            
+            <button class="Left-sidebar-button">
+                <a href="#">Carrier</a>
+            </button>
+        </section>
+
+        <section class="breadchrumb">
+            
+            <div class="container">
+                <nav id="siteBreadcrumb">
+                  <ol class="breadcrumb">
+                   
+                  </ol>
+                </nav>
+                </div>
+
+            <!--
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Summer 15</a></li>
+                <li class="breadcrumb-actual">Italy</li>
+              </ul> -->
+        </section>
+        
+
+        <main>
+
+            <h2>What is EntryCoord?</h2>
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptate culpa minus sapiente voluptates a, distinctio illo cupiditate odit alias libero omnis architecto unde accusantium non consectetur provident sunt nam ipsam, quas, repellendus nisi maiores soluta nobis? Libero nihil veniam quisquam doloribus eligendi aliquam ullam at, dolorem consequatur quo repellat aut, mollitia vitae laboriosam fugit rerum est! Dignissimos saepe delectus consequuntur eligendi voluptate culpa laudantium qui ducimus vitae quibusdam voluptatum at corrupti voluptates minima placeat, omnis esse quaerat voluptatibus earum veniam dolore. Accusamus qui odit ab obcaecati nam consectetur numquam vero vitae aliquid illum iure voluptatibus laborum temporibus sunt eligendi maxime iste rerum, incidunt nulla provident id voluptatum repudiandae soluta nesciunt? Autem aperiam consequuntur, ratione fugit assumenda deserunt cupiditate, illo molestiae laudantium quos qui eaque amet, aut nisi. Est odit reprehenderit quam! Velit corrupti quos esse nulla ullam commodi fuga ea, non unde, modi ab dolor eum voluptate quas odit aliquid eius qui autem quis dignissimos dolore, nisi veniam ducimus libero? Illum saepe ullam voluptatibus totam culpa asperiores, animi perspiciatis, vitae recusandae quidem nihil soluta dignissimos? Fugiat ipsa eos laborum voluptatum consequatur obcaecati ut officiis repellat. Ea facere inventore quaerat dolorum delectus in quo aspernatur incidunt, eum perferendis. Fugiat dolorum voluptate numquam ipsam a eius harum fuga. Illo facere saepe, ut reprehenderit provident aliquid ducimus? Nesciunt provident alias laborum minus repudiandae iste, sapiente a, ab ducimus tempore animi, perferendis nulla! Quo asperiores unde tempore, enim eius velit optio, fuga officia ipsa error eligendi qui et harum in. Dolor tempore, sunt nostrum minus asperiores aliquam quos minima commodi tenetur suscipit qui cumque fuga voluptatum fugit consectetur, voluptatem quas! Enim consequuntur quae vitae esse, repudiandae aperiam? Aliquid exercitationem impedit iusto quos fugiat numquam corrupti harum quibusdam consequatur iste, sed nesciunt, odit earum ab molestias quod ipsa dicta debitis ut ea iure? Maxime rem corporis, sed ullam optio voluptate quaerat magni soluta! Dolorum earum, atque cum porro at perspiciatis hic quod impedit eligendi animi delectus ducimus qui laudantium praesentium labore? Consectetur similique facere aut blanditiis, laborum sunt id obcaecati odit aliquid hic nihil ducimus praesentium deleniti et ipsa nulla cumque laboriosam? Repellendus sunt nihil, earum suscipit mollitia maxime expedita sed facilis aliquid quia quaerat et laudantium ad, culpa maiores placeat provident, accusantium possimus molestias nobis. Molestias quos quas iusto atque autem, ipsam esse nisi nesciunt nemo ipsa officiis, tempora nulla reiciendis praesentium dolorem vel ab placeat amet quaerat fugit perferendis, necessitatibus ullam recusandae., distinctio illo cupiditate odit alias libero omnis architecto unde accusantium non consectetur provident sunt nam ipsam, quas, repellendus nisi maiores soluta nobis? Libero nihil veniam quisquam doloribus eligendi aliquam ullam at, dolorem consequatur quo repellat aut, mollitia vitae laboriosam fugit rerum est! Dignissimos saepe delectus consequuntur eligendi voluptate culpa laudantium qui ducimus vitae quibusdam voluptatum at corrupti voluptates minima placeat, omnis esse quaerat voluptatibus earum veniam dolore. Accusamus qui odit ab obcaecati nam consectetur numquam vero vitae aliquid illum iure voluptatibus labor, distinctio illo cupiditate odit alias libero omnis architecto unde accusantium non consectetur provident sunt nam ipsam, quas, repellendus nisi maiores soluta nobis? Libero nihil veniam quisquam doloribus eligendi aliquam ullam at, dolorem consequatur quo repellat aut, mollitia vitae laboriosam fugit rerum est! Dignissimos saepe delectus consequuntur eligendi voluptate culpa laudantium qui ducimus vitae quibusdam voluptatum at corrupti voluptates minima placeat, omnis esse quaerat voluptatibus earum veniam dolore. Accusamus qui odit ab obcaecati nam consectetur numquam vero vitae aliquid illum iure voluptatibus labor, distinctio illo cupiditate odit alias libero omnis architecto unde accusantium non consectetur provident sunt nam ipsam, quas, repellendus nisi maiores soluta nobis? Libero nihil veniam quisquam doloribus eligendi aliquam ullam at, dolorem consequatur quo repellat aut, mollitia vitae laboriosam fugit rerum est! Dignissimos saepe delectus consequuntur eligendi voluptate culpa laudantium qui ducimus vitae quibusdam voluptatum at corrupti voluptates minima placeat, omnis esse quaerat voluptatibus earum veniam dolore. Accusamus qui odit ab obcaecati nam consectetur numquam vero vitae aliquid illum iure voluptatibus labor</p>
+        </main>
+
+        <section class="right-bar">
+            <div class="login-form">
+                <div class="h2-c">Good to see you again!</div>
+                <p>Login with email...</p>
+                <form action="action_page.php">
+                    
+                  
+                    <div class="container">
+                      <label for="uname">Username</label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                  
+                      <label for="psw">Password</label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                      <button type="submit">Login</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                  
+                    <div class="container" >
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+            </div>
+              
+        </section>
+
+        <footer>
+            footer
+        </footer>
+
+    </div>
+
+</body>
+</html>
